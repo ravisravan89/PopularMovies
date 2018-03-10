@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar_main"
+        style="@style/ThemeToolbar"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_main"
+        android:baselineAligned="false"
+        android:divider="?android:attr/dividerHorizontal"
+        android:orientation="horizontal"
+        tools:context="com.ravisravan.popularmovies.MainActivity">
+
+        <!--
+        This layout is a two-pane layout for the Popular master/detail flow.
+        -->
+        <!-- static fragment -->
+        <fragment
+            android:id="@+id/fragment_main"
+            android:name="com.ravisravan.popularmovies.MainActivityFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_main" />
+
+        <!-- Dynamic fragment -->
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/movie_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.ravisravan.sunshine.DetailActivity"
+            tools:ignore="MergeRootFrame"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PopularMovies</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_details">DetailsActivity</string>
+    <string name="release_date">Release Date</string>
+    <string name="original_language">Original Language</string>
+    <string name="overview">Overview</string>
+    <string name="average_rating">Average Rating</string>
+    <string name="popularity">Popularity</string>
+    <string name="total_rating">Total Rating</string>
+    <string name="title_main">Movie-yes</string>
+    <string name="network_error">Please Check the internet connection</string>
+    <string name="no_trailers">No Trailers</string>
+    <string name="no_reviews">No Reviews</string>
+    <string name="reviews">Read Reviews</string>
+    <string name="mark_as_favourite">Mark as favoutire</string>
+    <string name="sort_favourite">favourites</string>
+    <string name="sort_order_key">sort_order</string>
+    <string name="sort_popularity">popularity.desc</string>
+    <string name="read_reviews">Click here to read reviews</string>
+    <plurals name="trailers_qty">
+        <item quantity="one">%d Trailer - click on title to view trailer</item>
+        <item quantity="other">%d Trailers - click on title to view trailer</item>
+    </plurals>
+    <plurals name="reviews_qty">
+        <item quantity="one">%d Review</item>
+        <item quantity="other">%d Reviews</item>
+    </plurals>
+</resources>
